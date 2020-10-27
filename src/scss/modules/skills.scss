@@ -1,0 +1,30 @@
+.skills {
+    @include section;
+    background-color: grey;
+
+    &__title {
+        @include sectionTitle;
+    }
+
+    &__wrapper {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.skills-type {
+
+&__title {
+    font-size: 24px;
+}
+
+    &__list {
+        list-style: url(/src/assets/icons/small-tick.svg);
+    }
+
+    &__skill {
+        margin-bottom: 14px;
+    }
+}
