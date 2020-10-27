@@ -1,0 +1,12 @@
+@mixin section {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin sectionTitle {
+    font-size: 60px;
+}
