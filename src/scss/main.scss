@@ -1,13 +1,19 @@
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
 @import "_variables";
+@import "_mixins";
 @import "modules/hello.scss";
+@import "modules/skills.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+min-height: 100vh;
+font-family: 'Nunito', sans-serif;
+letter-spacing: 0.1rem;
 }
