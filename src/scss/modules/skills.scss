@@ -23,7 +23,7 @@
     align-items: center;
 
     &::before {
-        font-size: 60px;
+        font-size: 50px;
         margin-bottom: 20px;
     }
 
@@ -39,8 +39,12 @@
         content: '🎓';
     }
 }
-    &__list {
+    &__list--green-tick {
         list-style: url(/src/assets/icons/small-tick.svg);
+    }
+
+    &__list--blue-tick {
+        list-style: url(/src/assets/icons/small-tick-light-blue.svg);
     }
 
     &__skill {
