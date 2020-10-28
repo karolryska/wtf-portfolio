@@ -1,7 +1,8 @@
 @mixin section {
     min-height: 100vh;
+    // min-height: -webkit-fill-available;
     margin: 0;
-    padding: 50px 0;
+    padding: 50px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,5 +11,17 @@
 @mixin sectionTitle {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
 }
+
+@mixin contactButton {
+    background-color: #4DA8FF;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
