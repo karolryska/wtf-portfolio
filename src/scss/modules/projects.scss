@@ -1,0 +1,82 @@
+.projects {
+    @include section;
+
+    &__title {
+        @include sectionTitle;
+        color: #234361;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #234361;
+        margin: 0 0 30px 0;
+    }
+
+    &__wrapper {
+        width: 100%;
+    }
+}
+
+.console {
+    width: 100%;
+    background-color: #212528;
+    border-radius: 16px;
+    overflow: hidden;
+
+    &__bar {
+        height: 36px;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+    &__dot {
+        height: 8px;
+        width: 8px;
+        background-color: #464A4D;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+}
+
+.project {
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.1rem;
+
+    &__wrapper {
+        padding: 20px;
+    }
+
+    &__icon {
+        height: 30px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 16px;
+    }
+
+    &__label {
+        font-size: 13px;
+        font-weight: 400;
+        text-align: right;
+        color: #808082;
+    }
+
+    &__title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    &__text {
+        font-size: 13px;
+        font-weight: 400;
+        color: #A3A3A3;
+    }
+}
