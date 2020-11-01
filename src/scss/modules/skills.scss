@@ -1,7 +1,7 @@
 .skills {
     @include section;
-    background-color: #1070CA;
-    color: #FFFFFF;
+    background-color: $blue;
+    color: $white;
 
     &__title {
         @include sectionTitle;
@@ -16,29 +16,30 @@
 
 .skills-type {
 
-&__title {
-    font-size: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &__title {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    &::before {
-        font-size: 50px;
-        margin-bottom: 20px;
+        &::before {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        &--bicep::before {
+            content: '💪';
+        }
+
+        &--face::before {
+            content: '🤔';
+        }
+
+        &--hat::before {
+            content: '🎓';
+        }
     }
 
-    &--bicep::before {
-        content: '💪';
-    }
-
-    &--face::before {
-        content: '🤔';
-    }
-
-    &--hat::before {
-        content: '🎓';
-    }
-}
     &__list--green-tick {
         list-style: url(/src/assets/icons/small-tick.svg);
     }

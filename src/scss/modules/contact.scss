@@ -1,7 +1,7 @@
 .contact {
     @include section;
-    background-color: #DBEAF7;
-    color: #425A70;
+    background-color: $blue-light01;
+    color: $text-default;
 
     &__title {
         @include sectionTitle;
@@ -36,10 +36,10 @@
         height: 50px;
         width: 50px;
         border-radius: 25px;
-        background-color: #FFFFFF;
+        background-color: $white;
         box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
         margin: 0;
-        
+
     }
 
     &__link {

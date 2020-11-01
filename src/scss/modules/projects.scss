@@ -3,14 +3,14 @@
 
     &__title {
         @include sectionTitle;
-        color: #234361;
+        color: $text-dark;
     }
 
     &__description {
         font-size: 16px;
         line-height: 30px;
         text-align: center;
-        color: #234361;
+        color: $text-dark;
         margin: 0 0 30px 0;
     }
 
@@ -21,13 +21,13 @@
 
 .console {
     width: 100%;
-    background-color: #212528;
+    background-color: $console-grey02;
     border-radius: 16px;
     overflow: hidden;
 
     &__bar {
         height: 36px;
-        background-color: #1E1E1E;
+        background-color: $console-grey02;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -37,7 +37,7 @@
     &__dot {
         height: 8px;
         width: 8px;
-        background-color: #464A4D;
+        background-color: $console-grey03;
         border-radius: 4px;
         margin-right: 10px;
     }
@@ -65,18 +65,18 @@
         font-size: 13px;
         font-weight: 400;
         text-align: right;
-        color: #808082;
+        color: $console-grey04;
     }
 
     &__title {
         font-size: 13px;
         font-weight: 700;
-        color: #ffffff;
+        color: $white;
     }
 
     &__text {
         font-size: 13px;
         font-weight: 400;
-        color: #A3A3A3;
+        color: $console-grey05;
     }
 }
