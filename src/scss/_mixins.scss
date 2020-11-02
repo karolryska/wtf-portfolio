@@ -10,12 +10,23 @@
     @media (min-width: $deviceMedium) {
         padding: 50px 36px;
     }
+
+    @media (min-width: $deviceLarge) {
+        padding: 70px 100px;
+        min-height: auto;
+    }
+
 }
 
 @mixin sectionTitle {
     font-size: 36px;
     font-weight: 700;
     margin: 0 0 40px 0;
+
+    @media (min-width: $deviceLarge) {
+        font-size: 48px;
+        margin: 0 0 50px 0;
+    }
 }
 
 @mixin contactButton {
