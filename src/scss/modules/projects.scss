@@ -24,10 +24,11 @@
     background-color: $console-grey02;
     border-radius: 16px;
     overflow: hidden;
+    margin-top: 20px;
 
     &__bar {
         height: 36px;
-        background-color: $console-grey02;
+        background-color: $console-grey01;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -45,7 +46,7 @@
 
 .project {
     font-family: 'Roboto Mono', monospace;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.05rem;
 
     &__wrapper {
         padding: 20px;
@@ -78,5 +79,9 @@
         font-size: 13px;
         font-weight: 400;
         color: $console-grey05;
+    }
+
+    &__link {
+        color: $text-link;
     }
 }
