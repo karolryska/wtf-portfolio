@@ -6,6 +6,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-width: $deviceMedium) {
+        padding: 50px 36px;
+    }
 }
 
 @mixin sectionTitle {
@@ -24,4 +28,3 @@
     padding: 0 20px;
     border-radius: 20px;
 }
-

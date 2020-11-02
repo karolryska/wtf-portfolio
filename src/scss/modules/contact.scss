@@ -3,6 +3,10 @@
     background-color: $blue-light01;
     color: $text-default;
 
+    @media (min-width: $deviceMedium) {
+        height: 100vh;
+    }
+
     &__title {
         @include sectionTitle;
     }
@@ -12,6 +16,11 @@
         line-height: 30px;
         text-align: center;
         margin: 0 0 60px 0;
+
+        @media (min-width: $deviceMedium),
+        (orientation: landscape) {
+            margin: 0 0 20px 0;
+        }
     }
 
     &__links {
@@ -20,6 +29,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media (min-width: $deviceMedium),
+        (orientation: landscape) {
+            width: 260px;
+            flex-grow: 1;
+            justify-content: center;
+        }
     }
 }
 
