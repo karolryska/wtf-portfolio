@@ -1,7 +1,32 @@
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes greet {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
 .hello {
   @include section;
   justify-content: space-between;
 
+  &__greeting {
+    display: none;
+  }
 
   &__photo {
     object-fit: cover;
@@ -30,10 +55,99 @@
     text-decoration: none;
     font-weight: 700;
     color: $text-link;
+  }
 
+
+  @media (min-width: $deviceLarge) {
+    min-height: 100vh;
+    justify-content: center;
+
+    &__photo-wrapper {
+      position: relative;
+    }
+
+    &__greeting {
+      display: inline;
+      background-color: $blue;
+      padding: 18px;
+      border-radius: 20px;
+      color: $white;
+      font-size: 24px;
+      position: absolute;
+      top: -20%;
+      right: -80%;
+      animation: slide .6s backwards;
+
+      &::before {
+        content: "";
+        background: url(/src/assets/img/speech_cloud.svg) no-repeat;
+        background-size: contain;
+        height: 40px;
+        width: 20px;
+        position: absolute;
+        bottom: 2px;
+        left: 20%;
+        transform: translateY(100%);
+
+      }
+    }
+
+    &__wrapper {
+      margin: 90px 0;
+      width: 600px;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: url(/src/assets/img/bracket-left.svg) no-repeat right;
+        background-size: contain;
+        height: 120%;
+        width: 100px;
+        top: 50%;
+        left: -120px;
+        transform: translateY(-50%);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: url(/src/assets/img/bracket-right.svg) no-repeat left;
+        background-size: contain;
+        height: 120%;
+        width: 100px;
+        top: 50%;
+        right: -120px;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__photo {
+      height: 200px;
+      width: 200px;
+      border-radius: 100px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 26px;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 36px;
+    }
   }
 }
 
 .button {
   @include contactButton;
+}
+
+.hand {
+  display: inline-block;
+  animation: greet .4s .2s alternate infinite;
 }

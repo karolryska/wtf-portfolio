@@ -33,9 +33,13 @@
     background-color: #4DA8FF;
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 18px;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 20px;
-    border-radius: 20px;
+    font-size: 20px;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 26px;
+    border-radius: 23px;
+
+    @media (min-width: $deviceLarge) {
+        font-size: 18px;
+    }
 }
