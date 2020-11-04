@@ -12,11 +12,27 @@
 
 @keyframes greet {
   0% {
-    transform: rotate(-10deg);
+    transform: rotate(0deg);
+  }
+
+  15% {
+    transform: rotate(60deg);
+  }
+
+  30% {
+    transform: rotate(0deg);
+  }
+
+  45% {
+    transform: rotate(60deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(30deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -103,7 +119,7 @@
         position: absolute;
         background: url(/src/assets/img/bracket-left.svg) no-repeat right;
         background-size: contain;
-        height: 120%;
+        height: 140%;
         width: 100px;
         top: 50%;
         left: -120px;
@@ -116,7 +132,7 @@
         position: absolute;
         background: url(/src/assets/img/bracket-right.svg) no-repeat left;
         background-size: contain;
-        height: 120%;
+        height: 140%;
         width: 100px;
         top: 50%;
         right: -120px;
@@ -137,8 +153,8 @@
     }
 
     &__description {
-      font-size: 18px;
-      line-height: 36px;
+      font-size: 20px;
+      line-height: 40px;
     }
   }
 }
@@ -149,5 +165,5 @@
 
 .hand {
   display: inline-block;
-  animation: greet .4s .2s alternate infinite;
+  animation: greet 1s .2s both infinite;
 }
