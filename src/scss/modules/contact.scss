@@ -38,6 +38,14 @@
             flex-grow: 1;
             justify-content: center;
         }
+
+        @media (min-width: $deviceLarge) {
+            width: 40%;
+            margin-top: 40px;
+            flex-direction: row;
+            flex-grow: 0;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -50,6 +58,11 @@
     padding: 0;
     margin-bottom: 60px;
 
+    @media (min-width: $deviceLarge) {
+        width: auto;
+        margin: 0;
+    }
+
     &__icon {
         height: 50px;
         width: 50px;
@@ -57,6 +70,10 @@
         background-color: $white;
         box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
         margin: 0;
+
+        @media (min-width: $deviceLarge) {
+            margin-right: 24px;
+        }
 
     }
 

@@ -12,7 +12,7 @@
     }
 
     @media (min-width: $deviceLarge) {
-        padding: 70px 100px;
+        padding: 80px 100px 140px;
         min-height: auto;
     }
 
@@ -37,6 +37,7 @@
     @media (min-width: $deviceLarge) {
         font-size: 20px;
         line-height: 40px;
+
     }
 }
 
