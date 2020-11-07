@@ -7,9 +7,7 @@
     }
 
     &__description {
-        font-size: 16px;
-        line-height: 30px;
-        text-align: center;
+        @include sectionText;
         color: $text-dark;
         margin: 0 0 30px 0;
 
