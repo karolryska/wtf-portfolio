@@ -20,11 +20,11 @@
     &__wrapper {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 20px;
 
         @media (min-width: $deviceLarge) {
-            width: 900px;
+            width: 1100px;
         }
     }
 }
@@ -34,7 +34,6 @@
     background-color: $console-grey02;
     border-radius: 16px;
     overflow: hidden;
-    // margin-top: 20px;
 
     &__bar {
         height: 36px;
@@ -60,6 +59,10 @@
 
     &__wrapper {
         padding: 20px;
+
+        @media (min-width: $deviceLarge) {
+            padding-bottom: 40px;
+        }
     }
 
     &__icon {
@@ -70,24 +73,34 @@
         display: grid;
         grid-template-columns: 120px 1fr;
         gap: 16px;
+
+        @media (min-width: $deviceLarge) {
+            grid-template-columns: 160px 1fr;
+        }
     }
 
     &__label {
         font-size: 13px;
-        font-weight: 400;
         text-align: right;
+        font-weight: 400;
         color: $console-grey04;
+
+        @media (min-width: $deviceLarge) {
+            font-size: 16px;
+        }
     }
 
     &__title {
         font-size: 13px;
         font-weight: 700;
         color: $white;
+
+        @media (min-width: $deviceLarge) {
+            font-size: 16px;
+        }
     }
 
     &__text {
-        font-size: 13px;
-        font-weight: 400;
         color: $console-grey05;
     }
 
