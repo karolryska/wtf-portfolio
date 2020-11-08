@@ -20,11 +20,11 @@
     &__wrapper {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 20px;
 
         @media (min-width: $deviceLarge) {
             width: 1100px;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
@@ -54,11 +54,9 @@
 }
 
 .project {
-    font-family: 'Roboto Mono', monospace;
-    letter-spacing: 0.05rem;
 
     &__wrapper {
-        padding: 20px;
+        padding: 25px;
 
         @media (min-width: $deviceLarge) {
             padding-bottom: 40px;
@@ -67,37 +65,32 @@
 
     &__icon {
         height: 30px;
+        width: 30px;
     }
 
     &__grid {
         display: grid;
-        grid-template-columns: 120px 1fr;
+        grid-template-columns: 110px 1fr;
         gap: 16px;
+        font-size: 13px;
+        font-family: 'Roboto Mono', monospace;
+        letter-spacing: 0.05rem;
 
         @media (min-width: $deviceLarge) {
             grid-template-columns: 160px 1fr;
+            font-size: 16px;
         }
     }
 
     &__label {
-        font-size: 13px;
-        text-align: right;
         font-weight: 400;
+        text-align: right;
         color: $console-grey04;
-
-        @media (min-width: $deviceLarge) {
-            font-size: 16px;
-        }
     }
 
     &__title {
-        font-size: 13px;
         font-weight: 700;
         color: $white;
-
-        @media (min-width: $deviceLarge) {
-            font-size: 16px;
-        }
     }
 
     &__text {
