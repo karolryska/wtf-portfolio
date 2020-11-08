@@ -18,7 +18,7 @@ import '../scss/main.scss';
               <span class="console__dot"></span>
             </div>
             <div class="project__wrapper">
-              <img class="project__icon" src="../assets/icons/github-white.svg" alt="">
+              <img class="project__icon" src="img/github-white.svg" alt="">
               <h3 class="project__grid"><span class="project__label">project:</span><span class="project__title">${name}</span></h3>
               <p class="project__grid"><span class="project__label">description:</span><span class="project__text">xxx xxx xxx</span></p>
               <p class="project__grid"><span class="project__label">demo:</span><span class="project__text">see here</span></p>
