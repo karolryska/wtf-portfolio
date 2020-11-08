@@ -4,12 +4,6 @@ import '../scss/main.scss';
 // import {registerSW} from './pwa.js';
 // registerSW();
 
-/* place your code below */
-
-
-
-
-
  fetch("https://api.github.com/users/karolryska/repos?&sort=updated")
     .then(resp => resp.json())
     .then(resp => {
