@@ -1,9 +1,5 @@
 import '../scss/main.scss';
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
-
  fetch("https://api.github.com/users/karolryska/repos?&sort=updated")
     .then(resp => resp.json())
     .then(resp => {
@@ -19,14 +15,36 @@ import '../scss/main.scss';
             </div>
             <div class="project__wrapper">
               <img class="project__icon" src="img/github-white.svg" alt="">
-              <h3 class="project__grid"><span class="project__label">project:</span><span class="project__title">${name}</span></h3>
-              <p class="project__grid"><span class="project__label">description:</span><span class="project__text">xxx xxx xxx</span></p>
-              <p class="project__grid"><span class="project__label">demo:</span><span class="project__text">see here</span></p>
-              <p class="project__grid"><span class="project__label">github:</span><span class="project__text">&lt;<a class="project__link" href="${html_url}" title="name - demo">source code</a>&gt;</span></p>
+              <h3 class="project__grid">
+                <span class="project__label">project:</span>
+                <span class="project__title">${name}</span>
+              </h3>
+              <p class="project__grid">
+                <span class="project__label">description:</span>
+                <span class="project__text">${description}</span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">demo:</span>
+                <span class="project__text">&lt;<a class="project__link" 
+                    href="${homepage}" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    title="${name} - demo">see here</a>&gt;
+                </span>
+              </p>
+              <p class="project__grid">
+                <span class="project__label">github:</span>
+                <span class="project__text">&lt;<a class="project__link" 
+                    href="${html_url}"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    title="${name} - code">source code</a>&gt;
+                </span>
+              </p>
             </div>
           </article>`;
           counter++;
-          if (counter < 5) {projectsWrapper.innerHTML += template;}
+          if (counter < 5 && description && homepage) {projectsWrapper.innerHTML += template;}
         };
     })
     .catch(error => {
