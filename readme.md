@@ -1,7 +1,7 @@
 # wtf-portfolio :computer:
 Frontend portfolio showing my skills and projects.
 
-Project was made as part of *WTF*Co*ten*frontend*course*.
+Project was made as part of *WTF Co ten frontend course*.
 
 ## About
 Landing page based on wtf-webpack-starter kit.
