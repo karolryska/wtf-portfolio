@@ -1,18 +1,30 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+# wtf-portfolio :computer:
+Frontend portfolio showing my skills and projects.
 
-# WTF Webpack Starter Kit 
+Project was made as part of *WTF*Co*ten*frontend*course*.
 
-Simple toolkit for your static websites development.
+## About
+Landing page based on wtf-webpack-starter kit.
+With this project I had to use Github API to present my projects. Page is adapted for mobile device and desktops.
 
-## How to use it?
+## Technologies and tools
+- HTML5
+- CSS3 (SCSS, Flexbox, Grid)
+- JavaScript ES6
+- API
+- webpack
+- npm
+- Git
+- Figma
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+## Setup
+To run this project you need Node.js with npm installed.
+```
+npm install
+npm run start
+```
 
-## Available scripts
+## Live
+[wtf-portfolio](https://karolryska.github.io/wtf-portfolio/)
 
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
 
