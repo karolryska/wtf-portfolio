@@ -38,7 +38,8 @@
 
 .hello {
   @include section;
-  justify-content: space-between;
+  min-height: 100vh;
+  justify-content: space-around;
 
   &__greeting {
     display: none;
@@ -50,6 +51,10 @@
     width: 140px;
     border-radius: 70px;
     border: solid 16px $blue-light02;
+  }
+
+  &__wrapper {
+    max-width: 600px;
   }
 
   &__title {
@@ -107,7 +112,7 @@
     }
 
     &__wrapper {
-      margin: 90px 0;
+      margin: 70px 0;
       width: 600px;
       position: relative;
 

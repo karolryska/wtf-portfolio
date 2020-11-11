@@ -1,5 +1,4 @@
 @mixin section {
-    min-height: 100vh;
     // min-height: -webkit-fill-available;
     margin: 0;
     padding: 50px 24px;
@@ -12,7 +11,7 @@
     }
 
     @media (min-width: $deviceLarge) {
-        padding: 80px 100px 140px;
+        padding: 80px 100px;
         min-height: auto;
     }
 
@@ -45,11 +44,12 @@
     background-color: #4DA8FF;
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     height: 46px;
     line-height: 46px;
     padding: 0 26px;
     border-radius: 23px;
+    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
 
     @media (min-width: $deviceLarge) {
         font-size: 20px;
